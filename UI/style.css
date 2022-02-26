@@ -242,7 +242,7 @@ body {
   }
   .about,
   .alogo {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     display: block;
@@ -269,7 +269,7 @@ body {
   .form_title {
     display: none;
   }
-  .form_holder {
+  #form_holder {
     display: none;
   }
   .footer {
