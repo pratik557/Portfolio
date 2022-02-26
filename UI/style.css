@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+}
+.navcontainer {
+  max-width: 1020px;
+  margin: 0px auto;
+}
+.navheader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#hiddenmenu {
+  display: flex;
+  justify-content: space-between;
+}
+.logo h2 a {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.6ch;
+}
+.hamburger {
+  display: none;
+}
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  display: inline;
+  margin: 0px 25px 0px 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+}
+.navicon ul {
+  list-style: none;
+  padding: 0px 0px 0px 275px;
+}
+.navicon ul li {
+  display: inline;
+  margin: 0px 20px 0px 10px;
+}
+.navicon ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.bodycontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.bodycontainer .hero img {
+  border: 0;
+  width: 250px;
+  border-radius: 50%;
+}
+.name h2 {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.acontainer {
+  padding: 50px 0 50px 0;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+.aheader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.alogo img {
+  width: 100%;
+  height: 175px;
+  max-width: 250px;
+  border-top-left-radius: 15px !important;
+  border-bottom-left-radius: 15px !important;
+  margin: 50px 0 0 0;
+}
+.about {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px 0px 0px 275px;
+  text-align: justify;
+  margin-right: 400px;
+}
+.bcontainer {
+  padding: 50px 0 50px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.connection h2 {
+  padding: 7px 0 14px 0;
+  margin: 0;
+}
+
+.bheader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social {
+  position: absolute;
+}
+.social .fab {
+  padding: 0 20px 0 0;
+}
+
+.social ul li {
+  list-style: none;
+  margin: 0 0 25px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.social ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.form_title {
+  margin: 0 0 0 250px;
+}
+
+#form_holder {
+  margin: 0 0 0 400px;
+}
+
+#form_holder input {
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+  padding: 6px 10px;
+  margin: 5px 10px 5px 10px;
+  border-radius: 4px;
+  box-shadow: #fff;
+  box-sizing: border-box;
+}
+#form_holder #form1 {
+  width: 500px;
+}
+#form_holder #form2 {
+  width: 500px;
+}
+#form_holder textarea {
+  background-color: #000;
+  color: #fff;
+  padding: 6px 10px;
+  margin: 5px 10px 5px 10px;
+  border-radius: 4px;
+  box-shadow: #fff;
+  box-sizing: border-box;
+}
+#form_holder #form4 {
+  width: 100px;
+}
+.footer {
+  margin: 225px 0px 0px 280px;
+}
+.progress {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 0px 450px;
+}
+.progress .progressbar {
+  width: 500px;
+  height: 15px;
+  background-color: #555;
+  border-radius: 4px;
+}
+.progress .progress_color {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.course {
+  margin: 25px 0 0px 450px;
+}
+
+/*mobile<<<<<----------->>>>>*/
+@media only screen and (max-width: 900px) {
+  .navheader {
+    display: block;
+  }
+  .logo,
+  .menu,
+  .navicon {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .hamburger {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+  }
+  .hamburger :hover {
+    color: rgb(192, 48, 48);
+  }
+  .navicon ul {
+    padding-left: 0px;
+  }
+  .bodycontainer,
+  .name {
+    padding: 10px 0 0 0;
+    margin: 0;
+    width: 100%;
+  }
+  .bodycontainer img,
+  .name {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .about,
+  .alogo {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: static;
+  }
+  .alogo img {
+    text-align: center;
+    border-radius: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .course {
+    display: none;
+  }
+  .progress {
+    display: none;
+  }
+  .connection {
+    display: none;
+  }
+  .form_title {
+    display: none;
+  }
+  .form_holder {
+    display: none;
+  }
+  .footer {
+    text-align: center;
+    margin: 0 10px 0px 20px;
+    padding: 0;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .block {
+    transition: all 0.6s cubic-bezier(0.12, 0, 0.39, 0);
+  }
+  .hidecontact {
+    display: none;
+  }
+  #hiddenmenu {
+    display: block;
+  }
+  .chide {
+    display: none;
+  }
+}

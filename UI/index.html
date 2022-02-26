@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratik Gupta.com.np</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--navcontainer containes(navbar along with logo,menu and social media icon)-->
+    <div class="navcontainer">
+      <div class="navheader">
+        <div class="logo">
+          <h2><a href="#">PG</a></h2>
+        </div>
+        <a onclick="opennav()" class="hamburger" href="#"
+          ><i class="fas fa-bars"></i
+        ></a>
+        <div id="hiddenmenu" class="hidden">
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="https://blog.pratikgupta.com.np/">Blog</a></li>
+              <li><a class="chide" href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="navicon">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.LinkedIn.com/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--bodycontainer containes(image,about me and course)-->
+    <div class="bodycontainer">
+      <div class="hero">
+        <div>
+        <img
+          class="animate__animated animate__backInUp"
+          src="profile.jpeg"
+          alt="loading"
+        />
+      <div class="name">
+        <h2 class="animate__animated animate__fadeInDownBig">PRATIK GUPTA</h2>
+      </div>
+    </div>
+  </div>
+    <div id="About" class="acontainer">
+      <div class="aheader">
+        <div class="alogo">
+          <img src="back.jpeg" alt="loading" />
+        </div>
+        <div class="about">
+          <h2>About me</h2>
+          <div class="info">
+            <p>
+              The great pleasure introduce my self. I’m Pratik Gupta.Since 3
+              years I’m working as web developer & have developed many website
+              apart.I have been part of web design project also as freelancer
+              for both fontend and backend.<br />
+              <br />
+              Thankyou.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="course">HTML</div>
+    <div class="progress">
+      <div class="progressbar"></div>
+
+      <div style="width: 475px" class="progress_color"></div>
+    </div>
+    <div class="course">CSS</div>
+    <div class="progress">
+      <div class="progressbar"></div>
+      <div style="width: 450px" class="progress_color"></div>
+    </div>
+
+    <div class="course">JAVA SCRIPT</div>
+    <div class="progress">
+      <div class="progressbar"></div>
+      <div style="width: 200px" class="progress_color"></div>
+    </div>
+    <div class="course">C , C++ & JAVA</div>
+    <div class="progress">
+      <div class="progressbar"></div>
+      <div style="width: 350px" class="progress_color"></div>
+    </div>
+
+    <!--bcontainer containes(connection,contact and footer)-->
+    <div id="Contact" class="bcontainer">
+      <div class="bheader">
+        <div class="connection">
+          <h2>Let's Connect.</h2>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/iammr.pratik/"
+                  ><i class="fab fa-facebook-f"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/pratik-gupta-6a3410206/"
+                  ><i class="fab fa-linkedin"></i>LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sanguine_pratik/"
+                  ><i class="fab fa-instagram"></i>Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.Github.com/"
+                  ><i class="fab fa-github"></i> Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form_title">
+          <h2>Send me a message.</h2>
+        </div>
+        <a id="notempty" href="#"></a>
+        <form id="form_holder">
+          <input type="text" id="form1" placeholder="Your Name" required/>
+          <input type="email" id="form2" placeholder="Your Email" required/><br />
+          <textarea
+            name="message" id="form3" cols="67" rows="5" placeholder="Message" required>
+          </textarea><br />
+          <input type="submit" class="submit" id="form4" />
+        </form>
+        <div class="footer">
+          Copyright © 2021. Designed and developed by Pratik Gupta.
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
